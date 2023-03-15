@@ -29,6 +29,12 @@ public class Persona {
 	private Estado estado;
 	
 	
+	
+	
+
+	public Persona() {
+		super();
+	}
 
 	public Persona(int id, String nombre, String apellido, int edad, Pais pais, Estado estado) {
 		super();
