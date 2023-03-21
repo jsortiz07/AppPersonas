@@ -14,14 +14,14 @@ import com.johanapp.persona.service.EstadoService;
 
 
 @RestController
-@RequestMapping("/estado/")
+@RequestMapping("/estados/")
 public class EstadoRest {
 	
 	@Autowired
 	private EstadoService estadoService;
 	
 	
-	@GetMapping("/{id}/")
+	@GetMapping("{id}")
 	private ResponseEntity<List<Estado>> getAllEstadosByPais(@PathVariable("id") Long idPais){
 	
 		return ResponseEntity.ok(estadoService.findByPais(idPais));
